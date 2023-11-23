@@ -1,0 +1,73 @@
+body {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  font-family: 'Movies', sans-serif;
+  color: white;
+  font-size: 1em;
+  background-color: darkslategray;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  padding: 1px;
+  color: black;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.show-info-container {
+  display: flex;
+  margin-top: 5px;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.show-info-container img {
+  max-width: 200px;
+  margin-right: 20px;
+}
+
+.show-info-container div {
+  flex-grow: 1;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: lightgrey;
+}
+.sticky-text {
+
+}
+.left-box,
+.right-box {
+  margin: 5px;
+  padding: 10px;
+  flex: 1; 
+}
+
+.content {
+  text-align: center;
+}
+
+button {
+  padding: 2px;
+  font-size: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+input {
+  padding: 8px;
+  font-size: 14px;
+  margin-top: 5px;
+}

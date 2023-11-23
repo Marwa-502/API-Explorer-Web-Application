@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Watch 4 Later</title>
+  </head>
+
+  <body onload="getList()">
+    <!-- title/subtitle  -->
+    <section>
+      <h1>Watch 4 Later</h1>
+      <p>
+        Type the name of a book in the search below and like magic, it will
+        appear.
+      </p>
+      <!-- Input box and button -->
+      <input type="text" id="search" placeholder="Show Name" required />
+      <button id="search-button">Search</button>
+    </section>
+
+    <!-- Left side -->
+    <div class="container" id="showcovercontainer">
+      <div class="box left-box">
+        <div class="content">
+          <div class="sticky-text" style="font-size: 1em">Find a Show Here</div>
+
+          <!-- Show information and save button -->
+          <div class="show-info-container">
+            <img class="img-thumbnail" id="showimage" />
+            <p id="showinfo"></p>
+            <!-- <button id="saveforlater">Save For Later</button> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="show-info-container">
+        <img class="img-thumbnail" id="showimage" />
+      </div>
+
+      <!-- Right side -->
+      <div class="box right-box">
+        <div class="content">
+          <div class="sticky-text" style="font-size: 1em">Your Watch List</div>
+
+          <!-- saved list items  -->
+          <ul id="itemId"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
